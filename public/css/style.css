@@ -1,9 +1,36 @@
+@font-face {
+  font-family: "LeagueSpartan";
+  src: url("/font/LeagueSpartan-Bold.otf");
+  format("truetype");
+}
+
+@font-face {
+  font-family: "LibreBaskerville";
+  src: url("/font/LibreBaskerville-Regular.otf");
+  format("truetype");
+}
+
+body {
+  font-family: "LibreBaskerville";
+  letter-spacing: 1px;
+  color: #222;
+}
+
+a {
+  text-decoration: none;
+  outline: none;
+  color: inherit;
+}
+
+
 #sidebar {
+  font-family: "LeagueSpartan";
+  letter-spacing: 3px;
   position: fixed;
   top: 0;
   bottom: 0;
   left: 0;
-  width: 300px;
+  width: 0;
   height: 100%;
   background: #ccf6ff;
   padding-top: 4.5em;
@@ -13,6 +40,7 @@
 
 /* Sidebar buttons */
 #sidebar a {
+  color: #556;
   text-decoration: none;
   padding: 16px 16px 16px 1.5em;
   font-size: 25px;
@@ -39,6 +67,7 @@
 
 /* Open button */
 #sidebar_open {
+  font-family: "LeagueSpartan";
   color: #777;
   top: 0;
   left: 0;
