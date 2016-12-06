@@ -1,0 +1,112 @@
+#sidebar {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 300px;
+  height: 100%;
+  background: #ccf6ff;
+  padding-top: 4.5em;
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+/* Sidebar buttons */
+#sidebar a {
+  text-decoration: none;
+  padding: 16px 16px 16px 1.5em;
+  font-size: 25px;
+  background-color: inherit;
+  display: block;
+  transition: 0.15s;
+  font-size: 36px;
+}
+
+#sidebar a:hover {
+  background-color: #bcd6ef;
+}
+
+/* Close button */
+#sidebar #sidebar_close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 2em;
+  margin-right: 0.5em;
+  color: #777;
+  background-color: transparent;
+}
+
+/* Open button */
+#sidebar_open {
+  color: #777;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  height: 100%;
+  position: fixed;
+  font-size: 24px;
+  text-decoration: none;
+  padding: 16px;
+  background: #ccf6ff;
+  transition: 0.3s;
+}
+
+#sidebar_open:hover {
+  color: #AAB;
+}
+
+#sidebar #sidebar_close:hover {
+  color: #AAB;
+  background-color: transparent;
+}
+
+#content {
+}
+
+#cover {
+  height: 400px;
+}
+
+#friend_list {
+
+}
+
+.friendlist_item {
+  display: block;
+  height: 64px;
+  width: 600px;
+
+  margin: 0 auto;
+
+  padding: 10px 10px 20px 10px;
+}
+
+.friendlist_item:before {
+  display: block;
+  content: "";
+  height: 1px;
+
+  background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 250, from(#777), to(#FFF));
+  width: 600px;
+
+  margin-bottom: 10px
+}
+
+li.friendlist_item>div {
+  display: flex;
+  align-items: center;
+  float: left;
+  margin-right: 40px;
+  height: 100%;
+}
+
+.friendlist_item_info {
+  display: block;
+  clear: left;
+}
+
+#friend_subject_year {
+  text-align: center;
+  float: right;
+}
