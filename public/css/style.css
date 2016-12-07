@@ -1,19 +1,26 @@
 @font-face {
   font-family: "LeagueSpartan";
   src: url("/font/LeagueSpartan-Bold.otf");
-  format("truetype");
 }
 
 @font-face {
   font-family: "LibreBaskerville";
   src: url("/font/LibreBaskerville-Regular.otf");
-  format("truetype");
+}
+
+html {
+  padding: 0;
 }
 
 body {
+  display: flex;
+  flex-direction: row;
   font-family: "LibreBaskerville";
   letter-spacing: 1px;
   color: #222;
+  background-color: #FFF;
+  padding: 0;
+  margin: 0;
 }
 
 a {
@@ -21,7 +28,6 @@ a {
   outline: none;
   color: inherit;
 }
-
 
 #sidebar {
   font-family: "LeagueSpartan";
@@ -32,10 +38,11 @@ a {
   left: 0;
   width: 0;
   height: 100%;
-  background: #ccf6ff;
+  background: #ace6df;
   padding-top: 4.5em;
   overflow: hidden;
   transition: 0.5s;
+  box-shadow: 4px 0px 5px -3px #888888;
 }
 
 /* Sidebar buttons */
@@ -51,7 +58,8 @@ a {
 }
 
 #sidebar a:hover {
-  background-color: #bcd6ef;
+  background-color: #DFF;
+
 }
 
 /* Close button */
@@ -67,22 +75,34 @@ a {
 
 /* Open button */
 #sidebar_open {
+  position: fixed;
   font-family: "LeagueSpartan";
   color: #777;
   top: 0;
   left: 0;
   bottom: 0;
   height: 100%;
-  position: fixed;
   font-size: 24px;
   text-decoration: none;
   padding: 16px;
-  background: #ccf6ff;
+  background: #ace6df;
   transition: 0.3s;
+  width: 1em;
+  box-shadow: 4px 0px 5px -3px #888888;
 }
 
 #sidebar_open:hover {
   color: #AAB;
+}
+
+/* Spacing for the sidebar, positions the content div to the right of the
+ * sidebar_open column. Used so that the width of spacing can be specified in
+ * em. */
+#sidebar_open_spacing { 
+  font-family: "LeagueSpartan";
+  font-size: 24px;
+  padding: 16px;
+  flex: 0 1 1em;
 }
 
 #sidebar #sidebar_close:hover {
@@ -91,19 +111,21 @@ a {
 }
 
 #content {
+  flex: 1 1 auto;
 }
 
 #cover {
   height: 400px;
+  background: #eef;
+  box-shadow: inset 0px -4px 5px -3px #888888;
 }
 
 #friend_list {
-
 }
 
 .friendlist_item {
   display: block;
-  height: 64px;
+  height: 96px;
   width: 600px;
 
   margin: 0 auto;
@@ -116,7 +138,7 @@ a {
   content: "";
   height: 1px;
 
-  background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 250, from(#777), to(#FFF));
+  background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 250, from(#777), to(#EFF));
   width: 600px;
 
   margin-bottom: 10px
@@ -128,6 +150,11 @@ li.friendlist_item>div {
   float: left;
   margin-right: 40px;
   height: 100%;
+}
+
+.friendlist_item img {
+  border-radius: 50%;
+  border: 2px solid #CCE;
 }
 
 .friendlist_item_info {
