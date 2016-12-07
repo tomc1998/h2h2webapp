@@ -3,8 +3,9 @@
  *  {@link js/router.js}.
  */
 
-/** Class contains functionality for friends list page 
- *  @constructor 
+/**
+ *  Provides behaviour for the friends page. Added to routing by 
+ *  {@link js/router.js}.
  */
 function FriendListPage() {
 
@@ -12,13 +13,13 @@ function FriendListPage() {
    * Friend profile object. Holds friend data, then can populate a friend
    * profile HTML skeleton with the data. 
    */
-  var FriendListProfile = function(name, college, subject, year) {
+  var FriendListProfile = function(name, college, subject, year, pictureURL) {
     this.name = name;
     this.college = college;
     this.subject = subject;
     this.year = year;
     // Default picture URL for now.
-    this.pictureURL = "https://thebenclark.files.wordpress.com/2014/03/facebook-default-no-profile-pic.jpg";
+    this.pictureURL = pictureURL; 
 
     /** Get HTML via {@link fetchListEle}. This function populates the HTML with the
      * data inside this object. */
@@ -35,8 +36,7 @@ function FriendListPage() {
 
   /** 
    * Generates test FriendListProfile objects. 
-   * @return - A promise which is always resolved. Contains a list of
-   * FriendListProfiles.
+   * @return - List of FriendListProfiles.
    */
   function genTestFriends() {
     var list = [];
@@ -44,7 +44,8 @@ function FriendListPage() {
       profileData = new FriendListProfile("John" + ii, 
           "Collingwood", 
           "Computer Science", 
-          "First");
+          "First",
+          "https://thebenclark.files.wordpress.com/2014/03/facebook-default-no-profile-pic.jpg");
       list.push(profileData);
     }
     return list;

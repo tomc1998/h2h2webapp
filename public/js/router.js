@@ -29,7 +29,17 @@ var Router = {
       .navigate({
         path: "friends",
       directions: friendListPage.route,
-      title: "Friends",
+      title: "H2H2 - Friends",
+      })
+      .navigate({
+        path: "profile",
+      directions: profilePage.route,
+      title: "H2H2 - Profile",
+      })
+      .navigate({
+        path: "my_profile",
+      directions: myProfilePage.route,
+      title: "H2H2 - Profile",
       })
     .otherwise('/')
       .go();
