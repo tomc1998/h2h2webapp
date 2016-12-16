@@ -44,7 +44,7 @@ h1 {
   left: 0;
   width: 0;
   height: 100%;
-  background: #ace6df;
+  background: #0ba2a7;
   padding-top: 4.5em;
   overflow: hidden;
   transition: 0.5s;
@@ -53,7 +53,7 @@ h1 {
 
 /* Sidebar buttons */
 #sidebar a {
-  color: #556;
+  color: #eef;
   text-decoration: none;
   padding: 16px 16px 16px 1.5em;
   font-size: 25px;
@@ -64,8 +64,7 @@ h1 {
 }
 
 #sidebar a:hover {
-  background-color: #DFF;
-
+  background-color: #1bb2b7;
 }
 
 /* Close button */
@@ -75,7 +74,7 @@ h1 {
   right: 0;
   font-size: 2em;
   margin-right: 0.5em;
-  color: #777;
+  color: #eef;
   background-color: transparent;
 }
 
@@ -83,7 +82,7 @@ h1 {
 #sidebar_open {
   position: fixed;
   font-family: "LeagueSpartan";
-  color: #777;
+  color: #cce;
   top: 0;
   left: 0;
   bottom: 0;
@@ -91,14 +90,14 @@ h1 {
   font-size: 24px;
   text-decoration: none;
   padding: 16px;
-  background: #ace6df;
+  background: #0ba2a7;
   transition: 0.3s;
   width: 1em;
   box-shadow: 4px 0px 5px -3px #888888;
 }
 
 #sidebar_open:hover {
-  color: #AAB;
+  color: #eef;
 }
 
 /* Spacing for the sidebar, positions the content div to the right of the
@@ -125,7 +124,7 @@ h1 {
 /***************/
 #cover {
   height: 400px;
-  background: #eef;
+  background: #eff;
   box-shadow: inset 0px -4px 5px -3px #888888;
 }
 
@@ -164,7 +163,7 @@ li.friendlist_item>div {
 
 .friendlist_item img, #profile_picture {
   border-radius: 50%;
-  border: 2px solid #CCE;
+  border: 3px solid #cdd;
 }
 
 .friendlist_item_info {
@@ -186,7 +185,7 @@ li.friendlist_item>div {
 
 #profile_info {
   font-size: 18px;
-  background: #eef;
+  background: #eff;
   margin: 0 auto;
   text-align: center;
   box-shadow: inset 0px -4px 5px -3px #888888;

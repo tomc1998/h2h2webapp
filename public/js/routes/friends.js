@@ -42,10 +42,10 @@ function FriendListPage() {
     var list = [];
     for(var ii = 0; ii < 10; ++ii) {
       profileData = new FriendListProfile("John" + ii, 
-          "Collingwood", 
-          "Computer Science", 
-          "First",
-          "https://thebenclark.files.wordpress.com/2014/03/facebook-default-no-profile-pic.jpg");
+        "Collingwood", 
+        "Computer Science", 
+        "First",
+        "https://thebenclark.files.wordpress.com/2014/03/facebook-default-no-profile-pic.jpg");
       list.push(profileData);
     }
     return list;
@@ -101,9 +101,9 @@ function FriendListPage() {
         content.innerHTML = "";
         content.appendChild(friendsPageEle);
       })
-    .catch(function(err) {
-      console.log(err);
-    });
+      .catch(function(err) {
+        console.log(err);
+      });
   }
   return this;
 }
